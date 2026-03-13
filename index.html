@@ -9,17 +9,16 @@
 <body>
 
 <header class="navbar">
-
 <h2>Ideas Último Año</h2>
 
 <nav>
 <a href="#">Inicio</a>
-<a href="#">Propuestas</a>
-<a href="#">Contacto</a>
+<a href="#propuestas">Propuestas</a>
+<a href="#contacto">Contacto</a>
 </nav>
-
 </header>
 
+<main>
 
 <section class="hero">
 
@@ -33,19 +32,19 @@
 </section>
 
 
-<section class="propuesta">
+<section id="propuestas" class="propuesta">
 
 <h2>Enviar una propuesta</h2>
 
 <form id="formPropuesta">
 
-<label>Tu nombre</label>
-<input type="text" id="nombre">
+<label for="nombre">Tu nombre</label>
+<input type="text" id="nombre" name="nombre">
 
-<label>Tu propuesta</label>
-<input type="text" id="idea">
+<label for="idea">Tu propuesta</label>
+<input type="text" id="idea" name="idea">
 
-<button>Enviar propuesta</button>
+<button type="submit">Enviar propuesta</button>
 
 <p id="mensaje"></p>
 
@@ -54,10 +53,23 @@
 </section>
 
 
-<footer>
+<section class="ideas">
 
+<h2>Ideas de la promoción</h2>
+
+<ul>
+<li>Viaje de egresados</li>
+<li>Fiesta temática</li>
+<li>Camperas de la promo</li>
+<li>Torneo deportivo</li>
+</ul>
+
+</section>
+
+</main>
+
+<footer id="contacto">
 <p>Promoción 2026</p>
-
 </footer>
 
 <script src="script.js"></script>
